@@ -18,8 +18,8 @@ const Navbar = async () => {
                 </div>
 
                 <div className="navbar-end">
-                    <Link href='/' className='text-black'>Home</Link>
-                    <Link href={`${user ? '/profile' : '/api/auth/login'}`} className='text-black'>Profile</Link>
+                    <Link href='/' className='text-black ml-3'>Home</Link>
+                    <Link href={`${user ? '/profile' : '/api/auth/login'}`} className='text-black ml-3'>Profile</Link>
                     {
                         user ? <>
                             <LogoutLink> <button className='btn btn-primary'>Log out</button></LogoutLink>
