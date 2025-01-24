@@ -5,7 +5,7 @@ const page = async () => {
   const blogs = await res.json();
   // console.log(blogs);
   return (
-    <div>
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {
         blogs?.map(blog => <Blogs key={blog.id} blog={blog}></Blogs>)
       }

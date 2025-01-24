@@ -38,19 +38,14 @@ const Navbar = async () => {
                     </div>
                     <a className="text-xl">Blog-Viewer</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 space-x-4">
-                        <Link href='/'>Home</Link>
-                        <Link href='/profile'>Profile</Link>
-                    </ul>
-                </div>
+                
                 <div className="navbar-end">
                     {
                         user ? <>
-                            <LogoutLink>Log out</LogoutLink>
+                            <button className='btn btn-primary'><LogoutLink>Log out</LogoutLink></button>
                         </> : <>
-                            <LoginLink>Sign in</LoginLink>
-                            <RegisterLink>Sign up</RegisterLink>
+                            <button className='btn btn-primary'><LoginLink>Sign in</LoginLink></button>
+                            <button className='btn btn-primary ml-2'><RegisterLink>Sign up</RegisterLink></button>
                         </>
                     }
                 </div>
